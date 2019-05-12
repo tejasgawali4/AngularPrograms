@@ -1,0 +1,22 @@
+extends ../layout
+
+block content
+    h1.row= title
+    a.row(href="/users/index") Back to Index
+    hr.row
+    form.form-horizontal(action="create", method="post")
+        .form-group
+            .col-sm-2
+                label.control-label(for="uname") Username
+            .col-sm-6
+                input.form-control(type="text",placeholder="Enter Username",name="uname",id="uname")
+        .form-group
+            .col-sm-2
+                label.control-label(for="email") Email
+            .col-sm-6
+                input.form-control(type="email",placeholder="Enter Email Address",name="email",id="email")
+        .form-group
+            .col-sm-2.col-sm-offset-2
+                input.btn.btn-primary.btn-block(type="submit", value="Save User")
+            .col-sm-2
+                input.btn.btn-default.btn-block(type="reset", value="Reset")

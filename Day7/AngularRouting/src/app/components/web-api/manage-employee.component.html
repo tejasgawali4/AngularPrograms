@@ -1,0 +1,108 @@
+<form class="form-horizontal" [formGroup]="employeeForm" (submit)="saveForm()">
+    <fieldset>
+        <legend class="text-center">{{title}}</legend>
+        <div class="form-group" [ngClass]="{'has-error': frm.Id.invalid && frm.Id.touched}">
+            <label for="Id" class="control-label col-sm-2">Id: </label>
+            <div class="col-sm-7 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        #
+                    </span>
+                    <input type="number" class="form-control" name="Id" id="Id" formControlName="Id"
+                        placeholder="Employee Id" disabled>
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-offset-2" *ngIf="frm.Id.invalid && frm.Id.touched">
+                <span class="help-block" *ngIf="frm.Id.errors.required">Id is required.</span>
+            </div>
+            <div class="col-sm-8 col-md-offset-2">
+                <span class="help-block text-info">Id will be auto initialized.</span>
+            </div>
+        </div>
+
+        <div class="form-group" [ngClass]="{'has-error': frm.Name.invalid && frm.Name.touched}">
+            <label for="Name" class="control-label col-sm-2">Name: </label>
+            <div class="col-sm-7 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-user"></i>
+                    </span>
+                    <input type="text" class="form-control" name="Name" id="Name" formControlName="Name"
+                        placeholder="Full Name">
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-offset-2" *ngIf="frm.Name.invalid && frm.Name.touched">
+                <span class="help-block" *ngIf="frm.Name.errors.required">Name is required.</span>
+            </div>
+        </div>
+
+        <div class="form-group" [ngClass]="{'has-error': frm.EmailId.invalid && frm.EmailId.touched}">
+            <label for="EmailId" class="control-label col-sm-2">EmailId: </label>
+            <div class="col-sm-7 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" name="EmailId" id="EmailId" formControlName="EmailId"
+                        placeholder="Email">
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-offset-2" *ngIf="frm.EmailId.invalid && frm.EmailId.touched">
+                <span *ngIf="frm.EmailId.errors.required" class="help-block">Email is required.</span>
+                <span *ngIf="frm.EmailId.errors.email" class="help-block">Please enter a valid Email Id.</span>
+            </div>
+        </div>
+
+        <div class="form-group" [ngClass]="{'has-error': frm.Mobile.invalid && frm.Mobile.touched}">
+            <label for="Mobile" class="control-label col-sm-2">Mobile: </label>
+            <div class="col-sm-7 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-earphone"></i>
+                    </span>
+                    <input type="text" class="form-control" name="Mobile" id="Mobile" formControlName="Mobile"
+                        placeholder="Mobile Number">
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-offset-2" *ngIf="frm.Mobile.invalid && frm.Mobile.touched">
+                <span class="help-block" *ngIf="frm.Mobile.errors.required">Mobile Number is required.</span>
+            </div>
+        </div>
+
+        <div class="form-group" [ngClass]="{'has-error': frm.Address.invalid && frm.Address.touched}">
+            <label for="Address" class="control-label col-sm-2">Address: </label>
+            <div class="col-sm-7 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-home"></i>
+                    </span>
+                    <input type="text" class="form-control" name="Address" id="Address" formControlName="Address"
+                        placeholder="Address Number">
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-offset-2" *ngIf="frm.Address.invalid && frm.Address.touched">
+                <span class="help-block" *ngIf="frm.Address.errors.required">Address is required.</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="IsActive" class="control-label col-sm-2">IsActive: </label>
+            <div class="col-sm-7">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" formControlName="IsActive">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-5 col-sm-2">
+                <button type="submit" class="btn btn-primary btn-block">Save</button>
+            </div>
+            <div class="col-sm-2">
+                <button type="reset" class="btn btn-default btn-block">Reset</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

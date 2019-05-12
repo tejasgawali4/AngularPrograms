@@ -1,0 +1,14 @@
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\bin\Debug\netcoreapp2.2\CoreAPIWithADO.deps.json
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\bin\Debug\netcoreapp2.2\CoreAPIWithADO.runtimeconfig.json
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\bin\Debug\netcoreapp2.2\CoreAPIWithADO.runtimeconfig.dev.json
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\bin\Debug\netcoreapp2.2\CoreAPIWithADO.dll
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\bin\Debug\netcoreapp2.2\CoreAPIWithADO.pdb
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\obj\Debug\netcoreapp2.2\CoreAPIWithADO.csprojAssemblyReference.cache
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\obj\Debug\netcoreapp2.2\CoreAPIWithADO.csproj.CoreCompileInputs.cache
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\obj\Debug\netcoreapp2.2\CoreAPIWithADO.RazorAssemblyInfo.cache
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\obj\Debug\netcoreapp2.2\CoreAPIWithADO.RazorAssemblyInfo.cs
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\obj\Debug\netcoreapp2.2\CoreAPIWithADO.AssemblyInfoInputs.cache
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\obj\Debug\netcoreapp2.2\CoreAPIWithADO.AssemblyInfo.cs
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\obj\Debug\netcoreapp2.2\CoreAPIWithADO.RazorTargetAssemblyInfo.cache
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\obj\Debug\netcoreapp2.2\CoreAPIWithADO.dll
+C:\Users\Manish Sharma\Desktop\For EAG\CoreAPIWithADO\CoreAPIWithADO\obj\Debug\netcoreapp2.2\CoreAPIWithADO.pdb

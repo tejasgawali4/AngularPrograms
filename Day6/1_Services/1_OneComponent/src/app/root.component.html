@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3>One Component</h3>
+        </div>
+        <div class="panel-body">
+            <div class="options">
+                <div class="options">
+                    <a class="{{isSelected(author) && 'selected' || ''}}" *ngFor="let author of list" 
+                    (click)=selectAuthor(author)>{{author.name}}</a>
+                </div>
+                <div>
+                    <textarea class="padtop" readonly *ngIf="selectedAuthor">{{selectedAuthor.quote}}</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

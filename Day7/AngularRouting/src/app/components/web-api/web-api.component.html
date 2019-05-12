@@ -1,0 +1,37 @@
+<a class="btn btn-warning" [routerLink]="['/employee']">Create Employee</a>
+<br>
+<br>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Address</th>
+            <th>IsActive</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.Id}}</td>
+            <td>{{employee.Name}}</td>
+            <td>{{employee.EmailId}}</td>
+            <td>{{employee.Mobile}}</td>
+            <td>{{employee.Address}}</td>
+            <td>
+                <label>
+                    <input type="checkbox" [checked]=employee.IsActive disabled>
+                </label>
+            </td>
+            <td>
+                <a class="text-warning" (click)="setEmployee(employee)" [routerLink]="['/employee', employee.Id]">Edit</a>
+            </td>
+            <td>
+                <a class="text-danger" (click)="deleteEmployee(employee)">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

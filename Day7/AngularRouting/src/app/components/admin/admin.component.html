@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="row">
+        <h2 class="text-info">Admin Component</h2>
+        <p class="text-success">Welcome, You are an authenticated user.</p>
+
+        <ul class="col-sm-6 list-group">
+            <li class="list-group-item" *ngFor="let user of users">
+                {{user.username}}
+            </li>
+        </ul>
+    </div>
+</div>

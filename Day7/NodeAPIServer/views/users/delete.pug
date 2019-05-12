@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+    h1.row= title
+    hr
+    h2.alert.alert-danger Are you sure, you want to delete the following record?
+    form.form-horizontal(method="post")
+        .form-group
+            .col-sm-2
+                label.control-label(for="uname") Username 
+                    span.glyphicon.glyphicon-user
+            .col-sm-6
+                label.control-label= userToDelete.username
+        .form-group
+            .col-sm-2
+                label.control-label(for="email") Email 
+                    span.glyphicon.glyphicon-envelope
+            .col-sm-6
+                label.control-label= userToDelete.email
+        .form-group
+            .col-sm-2
+                input.btn.btn-danger.btn-block(type="submit", value="Delete User")
+            .col-sm-2.control-label
+                a(href="/users") Back to Users
+

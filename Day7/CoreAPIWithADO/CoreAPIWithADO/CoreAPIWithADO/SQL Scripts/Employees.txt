@@ -1,0 +1,9 @@
+﻿CREATE TABLE Employees
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(500) NOT NULL, 
+    [EmailId] NVARCHAR(500) NULL, 
+    [Mobile] NVARCHAR(20) NULL, 
+    [Address] NVARCHAR(MAX) NULL, 
+    [IsActive] BIT NULL
+)

@@ -1,0 +1,17 @@
+/* h4 {
+    font-style: italic;
+} */
+
+
+::ng-deep h4 {
+    font-style: italic;
+}
+
+:host {
+    display: block;
+    border: 2px solid red;
+}
+
+:host-context ::ng-deep h4{
+    background-color: gray;
+}

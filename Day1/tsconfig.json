@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "removeComments": true,
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "sourceMap": false,
+        "lib": [
+            "dom",
+            "es2015"
+        ]
+    }
+}
